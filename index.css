@@ -91,6 +91,21 @@ dd{
     margin-bottom: .8rem;
 }
 
+/*Footer stuff goes here*/
+footer{
+    clear:both;
+    text-align: center;
+    line-height: 1.4rem;
+    border: solid 1px #728f93;
+    background-color:#728f93;
+    color: #002432;
+    font-weight: 400;
+}
+footer a{
+    color:#002432;
+}
+
+
 /*home page mountain picture*/
 #home_page_pic {
     float: right;
@@ -122,16 +137,13 @@ dd{
     text-align: center;
 }
 
-/*Footer stuff goes here*/
-footer{
-    clear:both;
-    text-align: center;
-    line-height: 1.4rem;
-    border: solid 1px #728f93;
-    background-color:#728f93;
-    color: #002432;
-    font-weight: 400;
+/*request_info page stuff goes here*/
+
+.requestForm fieldset{
+    border-color: green;
+    margin: 2rem 2rem;
 }
-footer a{
-    color:#002432;
+.requestForm legend{
+    color:purple;
 }
+
