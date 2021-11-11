@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Embarkment - A Writer's Resource: Gallery</title>
+    <meta name="author" content="Teison Edwards">
+    <meta name="description" content="Embark on your next writing journey! Resources, tips, and tricks to take your writing to the next level.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!--Beginning of Header-->
+    <header>
+        <h1>Unique to your Medium</h1>
+    </header>
+
+    <!--Beginning of Nav-->
+    <nav>
+        <ul>
+            <li class="nav-button"><a href="index.html">Home</a></li>
+            <li class="nav-button"><a href="#">Inspiration</a></li>
+            <li class="nav-button"><a href="#">Plot</a></li>
+            <li class="nav-button"><a href="#">Character</a></li>
+            <li class="nav-button"><a href="#">Theme</a></li>
+            <li class="nav_button"><a href="gallery.html">Gallery</a></li>
+            <li class="active_page_button"><a href="#">Unique to your Medium</a></li>
+        </ul>
+    </nav>
+
+    <!--Beginning of Main Content-->
+    <main>
+        
+    </main>
+
+    <!--Beginning of Footer-->
+    <footer>
+        <p><a href="#">Back to the top</a></p>
+        <p>Page last updated <time datetime="2021-10-15">10/15</time></p>
+        <p>&copy; 2021 &bull; Teison Edwards</p>
+    </footer>
+</body>
+</html>
