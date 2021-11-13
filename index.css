@@ -1,4 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto; 
+}
 
 body{
     font-family: 'Raleway', sans-serif;
@@ -10,7 +17,7 @@ body{
     margin: 0;
     scroll-behavior: smooth;
     --poppy_color: #f83f32;
-    --second_highlight: #788b8d;
+    --second_highlight: #889da0;
     --text_color: #002432;
 
 }
@@ -22,45 +29,82 @@ a:hover{
 /*Header stuff goes here*/
 header{
     background-color: var(--poppy_color); 
-    margin: 0;
     width: 100vw;
-    padding: 4rem;
+    padding: 4rem 0 4rem 1rem;
+    display: flex;
+}
+
+header .header_contents{
+    display: flex;
+}
+
+header img{
+    padding-right: .3rem;
 }
 header h1{
-    text-align: center;
-    margin: 3rem;
     color: var(--text_color);
     margin: 0;
+    padding: 0;
 }
 header p{
     font-weight: 400;
-    text-align: center;
     margin:0;
 }
 
-/*Nav stuff goes here*/
+/*BIG screen nav here*/
+@media only screen and (min-width: 601px){
 
-nav{
-    background-color: var(--second_highlight);
+    nav{
+        background-color: var(--second_highlight);
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        margin:0;
+        padding-left: 1rem;
+    }
+    nav a{/*let's make it bold later with the new font*/
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: var(--text_color);
+        display: block;
+        padding: 1rem;
+        margin:0;
+    }
+    .active_page_button a{
+        background-color: var(--text_color);
+        color: var(--second_highlight);
+    
+    }
 }
-nav ul{
-    display: flex;
-    list-style-type: none;
-    margin:0;
-}
-nav a{/*let's make it bold later with the new font*/
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--text_color);
-    display: block;
-    padding: 1rem;
-    margin:0;
-}
-.active_page_button a{
-    background-color: var(--text_color);
-    color: var(--second_highlight);
 
+/*SMALL screen nav here */
+@media only screen and (max-width: 600px){
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: block; 
+        padding: .9rem 0;
+        border-bottom: 1px solid var(--second_highlight);
+    }
+    nav li{
+        padding-left: 1rem;
+    }
+    .active_page_button{
+        background-image: linear-gradient(var(--second_highlight), #536364)
+
+    }
 }
+
+
+
+
+
 
 /*Main stuff goes here*/
 main{
@@ -109,8 +153,14 @@ footer a{
     color:#002432;
 }
 
+.home_hero{
+    width: 100%;
+    height: auto;
+}
+
 
 /*home page mountain picture*/
+/*This is all not used now that I have a new hero pic
 #home_page_pic {
     float: right;
 }
@@ -122,7 +172,7 @@ footer a{
     padding: .6rem;
     text-align: center;
 }
-
+*/
 
 /*gallery stuffs*/
 #gallery_main{
@@ -132,13 +182,21 @@ footer a{
 .gallery_figure{
     width: 25vw;
     height: auto;
+    padding: .2rem;
 }
 .gallery_figure img{
     border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 
 .gallery_figure figcaption{
     text-align: center;
+    padding: .2rem;
+}
+
+.gallery_figure:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 /*request_info page stuff goes here*/
