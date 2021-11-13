@@ -175,6 +175,11 @@ footer a{
 */
 
 /*gallery stuffs*/
+#gallery_title{
+    width: 100%;
+    height: auto;
+}
+
 #gallery_main{
     display: flex;
     flex-wrap: wrap;
