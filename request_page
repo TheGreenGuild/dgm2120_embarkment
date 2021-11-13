@@ -40,10 +40,6 @@
     <!--Beginning of Main Content-->
     <main>
         <form method="get" class="requestForm" action="thanks_page.html">
-            <fieldset>
-                <legend>This is a test of the Legend</legend>
-                <label>Name <input type="text" name="name" placeholder="John Smith" pattern="[a-z][A-Z]"></label>
-            </fieldset>
 
             <fieldset>
                 <legend>This is a test of the Legend</legend>
@@ -51,9 +47,49 @@
             </fieldset>
 
             <fieldset>
-                <legend>This is a test of the Legend</legend>
-                <label>First Item<input type="text" name="testinput" placeholder="testvalue"></label>
+                <legend>Your Info</legend>
+                <label>Name <input type="text" name="name" placeholder="John Smith" pattern="[a-z][A-Z]" required/></label>
+                <label>Email <input type="email" name="email" placeholder="john.smith@mail.com" required/></label>
+                <label>Phone Number <input type='tel' name='phone' placeholder="123-456-7890" required/></label>
             </fieldset>
+
+            <fieldset>
+                <legend>Info Delivery Method</legend>
+                <label><input type="radio" name="delivery_method" value="text" />Text Message</label>
+                <label><input type="radio" name="delivery_method" value="email" />Email</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Which Links Would You Like?</legend>
+                <label><input type="checkbox" name="character" value="clicked" />Character</label>
+                <label><input type="checkbox" name="inspiration" value="clicked" />Inspiration</label>
+                <label><input type="checkbox" name="plot" value="clicked" />Plot</label>
+                <label><input type="checkbox" name="character" value="clicked" />Character</label>
+                <label><input type="checkbox" name="theme" value="clicked" />Theme</label>
+                <label><input type="checkbox" name="uniqueToYourMedium" value="clicked" />Unique to your Medium</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>What Kind of Creator Are You?</legend>
+                <select name="type_of_creator">
+                    <option value="none">Please Select</option>
+                    <option value="novelist">Novelist</option>
+                    <option value="game_master">Game Master</option>
+                    <option value='film maker'>Film Maker</option>
+                    <option value='artist_graphic_novelist'>Graphic Novelist or Artist</option>
+                    <option value='other'>Other</option>
+                </select>
+                <label><p>If other please specify so I can tailor my content to you.</p>
+                <textarea name="other_creator_details"></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <label>Comments, Ideas or Suggestions
+                <textarea name="misc_comments" ></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Finish and Recieve Tailored Links" />
         </form>
     </main>
 

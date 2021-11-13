@@ -9,15 +9,19 @@ body{
     font-size: 16px;
     margin: 0;
     scroll-behavior: smooth;
+    --poppy_color: #ef1201;
+    --second_highlight: #728f93;
+    --text_color: #002432;
+
 }
 
 a:hover{
-    color:#ef1201;
+    color:var(--poppy_color);
 }
 
 /*Header stuff goes here*/
 header{
-    background-color: #df190b; 
+    background-color: var(--poppy_color); 
     margin: 0;
     width: 100vw;
     padding: 4rem;
@@ -25,7 +29,7 @@ header{
 header h1{
     text-align: center;
     margin: 3rem;
-    color: #002432;
+    color: var(--text_color);
     margin: 0;
 }
 header p{
@@ -37,7 +41,7 @@ header p{
 /*Nav stuff goes here*/
 
 nav{
-    background-color: #728f93;
+    background-color: var(--second_highlight);
 }
 nav ul{
     display: flex;
@@ -47,14 +51,14 @@ nav ul{
 nav a{/*let's make it bold later with the new font*/
     font-size: 1.1rem;
     text-decoration: none;
-    color: #002432;
+    color: var(--text_color);
     display: block;
     padding: 1rem;
     margin:0;
 }
 .active_page_button a{
-    background-color: #002432;
-    color: #728f93;
+    background-color: var(--text_color);
+    color: var(--second_highlight);
 
 }
 
@@ -63,7 +67,7 @@ main{
     padding: 1rem 2vh;
 }
 a{
-    color: #002432;
+    color: var(--text_color);
 }
 .main_page_button{
     display: block;
@@ -96,9 +100,9 @@ footer{
     clear:both;
     text-align: center;
     line-height: 1.4rem;
-    border: solid 1px #728f93;
-    background-color:#728f93;
-    color: #002432;
+    border: solid 1px var(--second_highlight);
+    background-color: var(--second_highlight);
+    color: var(--text_color);
     font-weight: 400;
 }
 footer a{
@@ -147,3 +151,8 @@ footer a{
     color:purple;
 }
 
+.requestForm fieldset{
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column;
+}
