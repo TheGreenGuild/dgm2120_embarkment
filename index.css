@@ -9,8 +9,8 @@ body{
     font-size: 16px;
     margin: 0;
     scroll-behavior: smooth;
-    --poppy_color: #ef1201;
-    --second_highlight: #728f93;
+    --poppy_color: #f83f32;
+    --second_highlight: #788b8d;
     --text_color: #002432;
 
 }
@@ -143,16 +143,71 @@ footer a{
 
 /*request_info page stuff goes here*/
 
-.requestForm fieldset{
-    border-color: green;
-    margin: 2rem 2rem;
+.requestForm :required{
+    background-color: #ebd0ce;
+    /*Slightly lighter version of pop color*/
 }
+
 .requestForm legend{
-    color:purple;
+    color:var(--poppy_color);
+}
+
+.requestForm label{
+    margin: .5rem;
+}
+
+.requestForm select{
+    margin: 1rem 0 0 .3rem;
 }
 
 .requestForm fieldset{
+    color:var(--text_color);
+    border-color: var(--second_highlight);
+    margin: 2rem 2rem;
     display: flex;
     flex-wrap: flex;
     flex-direction: column;
+}
+
+/*This makes my stuff able to display on top of each other*/
+.requestForm label, .requestForm [type="text"], .requestForm [type="email"], .requestForm [type="tel"], .requestForm textarea{
+    display: block;
+}
+
+.requestForm [type="text"], .requestForm [type="email"], .requestForm [type="tel"], .requestForm textarea, .requestForm select{
+    border: 1px solid var(--second_highlight);
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.requestForm p{
+    margin: .3rem 0 .3rem 0;
+}
+
+.requestForm textarea{
+    background-color: #cbcecf;
+}
+
+.requestForm .comments_box{
+    height: 6rem;
+}
+
+.requestForm .comments_section{
+    color:var(--poppy_color);
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.requestForm [type="submit"]{
+    color: var(--text_color);
+    background-color: var(--poppy_color);
+    border: none;
+    padding: 2rem 1.7rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px #435457;
 }
