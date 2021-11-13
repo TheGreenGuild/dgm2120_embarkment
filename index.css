@@ -164,9 +164,6 @@ footer a{
     color:var(--text_color);
     border-color: var(--second_highlight);
     margin: 2rem 2rem;
-    display: flex;
-    flex-wrap: flex;
-    flex-direction: column;
 }
 
 /*This makes my stuff able to display on top of each other*/
@@ -197,9 +194,6 @@ footer a{
 
 .requestForm .comments_section{
     color:var(--poppy_color);
-    display: block;
-    display: flex;
-    flex-direction: column;
 }
 
 .requestForm [type="submit"]{
