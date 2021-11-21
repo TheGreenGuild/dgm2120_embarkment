@@ -270,6 +270,7 @@ footer a{
 table.inspiration_table{
     border-collapse: collapse;
     width: 100%;
+    margin: 2rem 0;
 }
 
 table.inspiration_table th{
