@@ -16,7 +16,7 @@ body{
     font-size: 16px;
     margin: 0;
     scroll-behavior: smooth;
-    --poppy_color: #f83f32;
+    --poppy_color: #fa4c40;
     --second_highlight: #889da0;
     --text_color: #002432;
 }
@@ -264,4 +264,35 @@ footer a{
     border-radius: 2rem;
     font-size: 1.2rem;
     box-shadow: 5px 5px 10px #435457;
+}
+
+/*Inspiration Page Table stuff here*/
+table.inspiration_table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.inspiration_table th{
+    background-color: var(--poppy_color);
+    text-align: left;
+    padding: .5rem 2vw;
+    font-size: 1.2rem;
+    color: white;
+}
+
+table.inspiration_table td{
+    padding: .4rem 2vw;
+    color: var(--text_color);
+}
+
+table.inspiration_table tr:nth-child(odd){
+    background-color:rgba(136, 157, 160, .2);
+}
+
+table.inspiration_table tr:hover{
+    background-color: rgba(250, 76, 64, .3);
+}
+
+#neils_video{
+    margin: 0 0 2rem 0;
 }
